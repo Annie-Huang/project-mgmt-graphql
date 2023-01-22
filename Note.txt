@@ -4,3 +4,5 @@ https://github.com/bradtraversy/project-mgmt-graphql
 https://github.com/Annie-Huang/project-mgmt-graphql
 
 --------------------------------------------------------------
+
+PS C:\react\project-mgmt-graphql> npm i express express-graphql graphql mongoose cors colors

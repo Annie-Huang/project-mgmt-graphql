@@ -3,7 +3,54 @@ GraphQL Crash Course With Full Stack MERN Project (https://www.youtube.com/watch
 https://github.com/bradtraversy/project-mgmt-graphql
 https://github.com/Annie-Huang/project-mgmt-graphql
 
+https://graphql.org/graphql-js/
+https://graphql.org/graphql-js/running-an-express-graphql-server/
 --------------------------------------------------------------
 
 PS C:\react\project-mgmt-graphql> npm i express express-graphql graphql mongoose cors colors
 PS C:\react\project-mgmt-graphql> npm i -D nodemon dotenv
+
+
+---------------------------
+
+Stopped the tutorial in 28:13 as I couldn't get the sever running:
+
+
+
+PS C:\react\project-mgmt-graphql> npm run dev
+
+> project-mgmt-graphql@1.0.0 dev
+> nodemon server/index.js
+
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server/index.js`
+Server running on port 3000;
+node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES: permission denied 3000;
+    at Server.setupListenHandle [as _listen2] (node:net:1317:21)
+    at listenInCluster (node:net:1382:12)
+    at Server.listen (node:net:1480:5)
+    at Function.listen (C:\react\project-mgmt-graphql\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\react\project-mgmt-graphql\server\index.js:14:5)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1361:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EACCES',
+  errno: -4092,
+  syscall: 'listen',
+  address: '3000;',
+  port: -1
+}
+[nodemon] app crashed - waiting for file changes before starting...
+
